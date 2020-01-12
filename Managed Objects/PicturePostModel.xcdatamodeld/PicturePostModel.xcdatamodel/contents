@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="PPPicture" representedClassName="PPPicture" syncable="YES">
+        <attribute name="pictureID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="pictureSet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PPPictureSet" inverseName="pictures" inverseEntity="PPPictureSet" syncable="YES"/>
+    </entity>
+    <entity name="PPPictureSet" representedClassName="PPPictureSet" syncable="YES">
+        <attribute name="dateTaken" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="pictureSetID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="pictures" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="PPPicture" inverseName="pictureSet" inverseEntity="PPPicture" syncable="YES"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PPPost" inverseName="pictureSets" inverseEntity="PPPost" syncable="YES"/>
+    </entity>
+    <entity name="PPPost" representedClassName="PPPost" syncable="YES">
+        <attribute name="favorite" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="installDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lon" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="postPictureID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="referencePictureSetID" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="pictureSets" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="PPPictureSet" inverseName="post" inverseEntity="PPPictureSet" syncable="YES"/>
+        <relationship name="takenPictureSets" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="PPTakenPictureSet" inverseName="post" inverseEntity="PPTakenPictureSet" syncable="YES"/>
+    </entity>
+    <entity name="PPTakenPicture" representedClassName="PPTakenPicture" syncable="YES">
+        <attribute name="direction" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="takenPictureID" optional="YES" attributeType="Integer 32" syncable="YES"/>
+        <attribute name="thumbnailPath" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="takenPictureSet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PPTakenPictureSet" inverseName="takenPictures" inverseEntity="PPTakenPictureSet" syncable="YES"/>
+    </entity>
+    <entity name="PPTakenPictureSet" representedClassName="PPTakenPictureSet" syncable="YES">
+        <attribute name="dateTaken" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="takenPictureSetID" optional="YES" attributeType="Integer 32" syncable="YES"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PPPost" inverseName="takenPictureSets" inverseEntity="PPPost" syncable="YES"/>
+        <relationship name="takenPictures" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="PPTakenPicture" inverseName="takenPictureSet" inverseEntity="PPTakenPicture" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PPPicture" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="PPPictureSet" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="PPPost" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="PPTakenPicture" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="PPTakenPictureSet" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

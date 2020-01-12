@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB4016C919A3999F00ED6C24 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4016C619A3999F00ED6C24 /* SSKeychain.m */; };
+		DB4016CA19A3999F00ED6C24 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4016C819A3999F00ED6C24 /* SSKeychainQuery.m */; };
+		DB66F9C217CF9F1B00D8FE7D /* PPPostListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB66F9C117CF9F1B00D8FE7D /* PPPostListTableViewController.m */; };
+		DB6A085E18CA1B0A0020FB95 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6A085D18CA1B0A0020FB95 /* MapKit.framework */; };
+		DB6BC36717C3A89900716223 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6BC36617C3A89900716223 /* Security.framework */; };
+		DB6DE8B017D8D03000F29251 /* PPUploadDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6DE8AF17D8D03000F29251 /* PPUploadDelegate.m */; };
+		DB7695BE17E364D40096D7AB /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7695BD17E364D40096D7AB /* UIImage+ImageEffects.m */; };
+		DB7695C117E897C10096D7AB /* UIColor+PPColors.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7695C017E897C10096D7AB /* UIColor+PPColors.m */; };
+		DB8C0E3017BE6FB50002824D /* PPTakenPictureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8C0E2F17BE6FB50002824D /* PPTakenPictureCell.m */; };
+		DB8CD03417DF77BA00DE1531 /* PPPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8CD03317DF77BA00DE1531 /* PPPictureViewController.m */; };
+		DB9C231317DE1391004DF922 /* PPPictureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9C231217DE1391004DF922 /* PPPictureCell.m */; };
+		DBA0211D17B914AF00CBB77B /* PPPostInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA0211C17B914AF00CBB77B /* PPPostInfoCell.m */; };
+		DBA0212017B924C200CBB77B /* PPTakenPictureSet.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA0211F17B924C200CBB77B /* PPTakenPictureSet.m */; };
+		DBA0212317B924C300CBB77B /* PPPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA0212217B924C300CBB77B /* PPPicture.m */; };
+		DBA0212617B924C300CBB77B /* PPPictureSet.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA0212517B924C300CBB77B /* PPPictureSet.m */; };
+		DBA0212917B924C300CBB77B /* PPTakenPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA0212817B924C300CBB77B /* PPTakenPicture.m */; };
+		DBB455E917B3E771006A8ED6 /* PPPostTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB455E817B3E771006A8ED6 /* PPPostTableViewController.m */; };
+		DBB5814E17BD265C0095B041 /* PPTakenPictureSetCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB5814D17BD265C0095B041 /* PPTakenPictureSetCollectionViewController.m */; };
+		DBBDCE1B17B124AE0047BD51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBDCE1A17B124AE0047BD51 /* Foundation.framework */; };
+		DBBDCE1D17B124AE0047BD51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBDCE1C17B124AE0047BD51 /* CoreGraphics.framework */; };
+		DBBDCE1F17B124AE0047BD51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBDCE1E17B124AE0047BD51 /* UIKit.framework */; };
+		DBBDCE2517B124AE0047BD51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBBDCE2317B124AE0047BD51 /* InfoPlist.strings */; };
+		DBBDCE2717B124AE0047BD51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBDCE2617B124AE0047BD51 /* main.m */; };
+		DBBDCE2B17B124AE0047BD51 /* PPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBDCE2A17B124AE0047BD51 /* PPAppDelegate.m */; };
+		DBBDCE2E17B124AE0047BD51 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBDCE2C17B124AE0047BD51 /* Main_iPhone.storyboard */; };
+		DBBDCE3117B124AE0047BD51 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBDCE2F17B124AE0047BD51 /* Main_iPad.storyboard */; };
+		DBBDCE3417B124AE0047BD51 /* PPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBDCE3317B124AE0047BD51 /* PPViewController.m */; };
+		DBBDCE3617B124AE0047BD51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBBDCE3517B124AE0047BD51 /* Images.xcassets */; };
+		DBBDCE3E17B124AE0047BD51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBDCE1A17B124AE0047BD51 /* Foundation.framework */; };
+		DBBDCE3F17B124AE0047BD51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBDCE1E17B124AE0047BD51 /* UIKit.framework */; };
+		DBBDCE4717B124AE0047BD51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBBDCE4517B124AE0047BD51 /* InfoPlist.strings */; };
+		DBBDCE4917B124AE0047BD51 /* Picture_PostTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBDCE4817B124AE0047BD51 /* Picture_PostTests.m */; };
+		DBBDCE5617B125060047BD51 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBDCE5217B125060047BD51 /* CoreData.framework */; };
+		DBBDCE5717B125060047BD51 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBDCE5317B125060047BD51 /* CoreLocation.framework */; };
+		DBBDCE5917B125060047BD51 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBDCE5517B125060047BD51 /* QuartzCore.framework */; };
+		DBBDCE6117B129040047BD51 /* PicturePostModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBBDCE5F17B129040047BD51 /* PicturePostModel.xcdatamodeld */; };
+		DBBDCE6517B1295B0047BD51 /* PPMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBDCE6417B1295B0047BD51 /* PPMapViewController.m */; };
+		DBBDCE7117B13A710047BD51 /* PPPost.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBDCE7017B13A710047BD51 /* PPPost.m */; };
+		DBBDCE7617B140D70047BD51 /* initial_post_list.json in Resources */ = {isa = PBXBuildFile; fileRef = DBBDCE7517B140D70047BD51 /* initial_post_list.json */; };
+		DBF58F2D17CFE8D50086801C /* PPPictureSetCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF58F2C17CFE8D50086801C /* PPPictureSetCollectionViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBBDCE4017B124AE0047BD51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBBDCE0F17B124AE0047BD51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBBDCE1617B124AE0047BD51;
+			remoteInfo = "Picture Post";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB4016C519A3999F00ED6C24 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		DB4016C619A3999F00ED6C24 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		DB4016C719A3999F00ED6C24 /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainQuery.h; sourceTree = "<group>"; };
+		DB4016C819A3999F00ED6C24 /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
+		DB66F9C017CF9F1B00D8FE7D /* PPPostListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPPostListTableViewController.h; path = Table/PPPostListTableViewController.h; sourceTree = "<group>"; };
+		DB66F9C117CF9F1B00D8FE7D /* PPPostListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPPostListTableViewController.m; path = Table/PPPostListTableViewController.m; sourceTree = "<group>"; };
+		DB6A085D18CA1B0A0020FB95 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DB6BC36617C3A89900716223 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DB6DE8AE17D8D03000F29251 /* PPUploadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPUploadDelegate.h; sourceTree = "<group>"; };
+		DB6DE8AF17D8D03000F29251 /* PPUploadDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPUploadDelegate.m; sourceTree = "<group>"; };
+		DB7695BC17E364D40096D7AB /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		DB7695BD17E364D40096D7AB /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		DB7695BF17E897C10096D7AB /* UIColor+PPColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PPColors.h"; sourceTree = "<group>"; };
+		DB7695C017E897C10096D7AB /* UIColor+PPColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PPColors.m"; sourceTree = "<group>"; };
+		DB8C0E2E17BE6FB50002824D /* PPTakenPictureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTakenPictureCell.h; sourceTree = "<group>"; };
+		DB8C0E2F17BE6FB50002824D /* PPTakenPictureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTakenPictureCell.m; sourceTree = "<group>"; };
+		DB8CD03217DF77BA00DE1531 /* PPPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPictureViewController.h; sourceTree = "<group>"; };
+		DB8CD03317DF77BA00DE1531 /* PPPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPictureViewController.m; sourceTree = "<group>"; };
+		DB9C231117DE1391004DF922 /* PPPictureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPPictureCell.h; path = Collection/PPPictureCell.h; sourceTree = "<group>"; };
+		DB9C231217DE1391004DF922 /* PPPictureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPPictureCell.m; path = Collection/PPPictureCell.m; sourceTree = "<group>"; };
+		DBA0211B17B914AF00CBB77B /* PPPostInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPPostInfoCell.h; path = Table/PPPostInfoCell.h; sourceTree = "<group>"; };
+		DBA0211C17B914AF00CBB77B /* PPPostInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPPostInfoCell.m; path = Table/PPPostInfoCell.m; sourceTree = "<group>"; };
+		DBA0211E17B924C200CBB77B /* PPTakenPictureSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPTakenPictureSet.h; path = "Managed Objects/PPTakenPictureSet.h"; sourceTree = "<group>"; };
+		DBA0211F17B924C200CBB77B /* PPTakenPictureSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPTakenPictureSet.m; path = "Managed Objects/PPTakenPictureSet.m"; sourceTree = "<group>"; };
+		DBA0212117B924C300CBB77B /* PPPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPPicture.h; path = "Managed Objects/PPPicture.h"; sourceTree = "<group>"; };
+		DBA0212217B924C300CBB77B /* PPPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPPicture.m; path = "Managed Objects/PPPicture.m"; sourceTree = "<group>"; };
+		DBA0212417B924C300CBB77B /* PPPictureSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPPictureSet.h; path = "Managed Objects/PPPictureSet.h"; sourceTree = "<group>"; };
+		DBA0212517B924C300CBB77B /* PPPictureSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPPictureSet.m; path = "Managed Objects/PPPictureSet.m"; sourceTree = "<group>"; };
+		DBA0212717B924C300CBB77B /* PPTakenPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPTakenPicture.h; path = "Managed Objects/PPTakenPicture.h"; sourceTree = "<group>"; };
+		DBA0212817B924C300CBB77B /* PPTakenPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPTakenPicture.m; path = "Managed Objects/PPTakenPicture.m"; sourceTree = "<group>"; };
+		DBB455E717B3E771006A8ED6 /* PPPostTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPPostTableViewController.h; path = Table/PPPostTableViewController.h; sourceTree = "<group>"; };
+		DBB455E817B3E771006A8ED6 /* PPPostTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPPostTableViewController.m; path = Table/PPPostTableViewController.m; sourceTree = "<group>"; };
+		DBB5814C17BD265C0095B041 /* PPTakenPictureSetCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPTakenPictureSetCollectionViewController.h; path = Collection/PPTakenPictureSetCollectionViewController.h; sourceTree = "<group>"; };
+		DBB5814D17BD265C0095B041 /* PPTakenPictureSetCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPTakenPictureSetCollectionViewController.m; path = Collection/PPTakenPictureSetCollectionViewController.m; sourceTree = "<group>"; };
+		DBBDCE1717B124AE0047BD51 /* Picture Post.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Picture Post.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBBDCE1A17B124AE0047BD51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DBBDCE1C17B124AE0047BD51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DBBDCE1E17B124AE0047BD51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DBBDCE2217B124AE0047BD51 /* Picture Post-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Picture Post-Info.plist"; sourceTree = "<group>"; };
+		DBBDCE2417B124AE0047BD51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DBBDCE2617B124AE0047BD51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DBBDCE2817B124AE0047BD51 /* Picture Post-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Picture Post-Prefix.pch"; sourceTree = "<group>"; };
+		DBBDCE2917B124AE0047BD51 /* PPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPAppDelegate.h; sourceTree = "<group>"; };
+		DBBDCE2A17B124AE0047BD51 /* PPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPAppDelegate.m; sourceTree = "<group>"; };
+		DBBDCE2D17B124AE0047BD51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		DBBDCE3017B124AE0047BD51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		DBBDCE3217B124AE0047BD51 /* PPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPViewController.h; sourceTree = "<group>"; };
+		DBBDCE3317B124AE0047BD51 /* PPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPViewController.m; sourceTree = "<group>"; };
+		DBBDCE3517B124AE0047BD51 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DBBDCE3B17B124AE0047BD51 /* Picture PostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Picture PostTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBBDCE4417B124AE0047BD51 /* Picture PostTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Picture PostTests-Info.plist"; sourceTree = "<group>"; };
+		DBBDCE4617B124AE0047BD51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DBBDCE4817B124AE0047BD51 /* Picture_PostTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Picture_PostTests.m; sourceTree = "<group>"; };
+		DBBDCE5217B125060047BD51 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DBBDCE5317B125060047BD51 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DBBDCE5517B125060047BD51 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DBBDCE6017B129040047BD51 /* PicturePostModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PicturePostModel.xcdatamodel; sourceTree = "<group>"; };
+		DBBDCE6317B1295B0047BD51 /* PPMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPMapViewController.h; path = Map/PPMapViewController.h; sourceTree = "<group>"; };
+		DBBDCE6417B1295B0047BD51 /* PPMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPMapViewController.m; path = Map/PPMapViewController.m; sourceTree = "<group>"; };
+		DBBDCE6F17B13A710047BD51 /* PPPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPPost.h; path = "Managed Objects/PPPost.h"; sourceTree = "<group>"; };
+		DBBDCE7017B13A710047BD51 /* PPPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPPost.m; path = "Managed Objects/PPPost.m"; sourceTree = "<group>"; };
+		DBBDCE7517B140D70047BD51 /* initial_post_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = initial_post_list.json; sourceTree = "<group>"; };
+		DBF58F2B17CFE8D50086801C /* PPPictureSetCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPPictureSetCollectionViewController.h; path = Collection/PPPictureSetCollectionViewController.h; sourceTree = "<group>"; };
+		DBF58F2C17CFE8D50086801C /* PPPictureSetCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPPictureSetCollectionViewController.m; path = Collection/PPPictureSetCollectionViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBBDCE1417B124AE0047BD51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6BC36717C3A89900716223 /* Security.framework in Frameworks */,
+				DBBDCE5617B125060047BD51 /* CoreData.framework in Frameworks */,
+				DB6A085E18CA1B0A0020FB95 /* MapKit.framework in Frameworks */,
+				DBBDCE5717B125060047BD51 /* CoreLocation.framework in Frameworks */,
+				DBBDCE5917B125060047BD51 /* QuartzCore.framework in Frameworks */,
+				DBBDCE1D17B124AE0047BD51 /* CoreGraphics.framework in Frameworks */,
+				DBBDCE1F17B124AE0047BD51 /* UIKit.framework in Frameworks */,
+				DBBDCE1B17B124AE0047BD51 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBBDCE3817B124AE0047BD51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBBDCE3F17B124AE0047BD51 /* UIKit.framework in Frameworks */,
+				DBBDCE3E17B124AE0047BD51 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB6BC36217C3A42700716223 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				DB4016C519A3999F00ED6C24 /* SSKeychain.h */,
+				DB4016C619A3999F00ED6C24 /* SSKeychain.m */,
+				DB4016C719A3999F00ED6C24 /* SSKeychainQuery.h */,
+				DB4016C819A3999F00ED6C24 /* SSKeychainQuery.m */,
+			);
+			name = Keychain;
+			sourceTree = "<group>";
+		};
+		DBB455E617B3E729006A8ED6 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				DBB455E717B3E771006A8ED6 /* PPPostTableViewController.h */,
+				DBB455E817B3E771006A8ED6 /* PPPostTableViewController.m */,
+				DBA0211B17B914AF00CBB77B /* PPPostInfoCell.h */,
+				DBA0211C17B914AF00CBB77B /* PPPostInfoCell.m */,
+				DB66F9C017CF9F1B00D8FE7D /* PPPostListTableViewController.h */,
+				DB66F9C117CF9F1B00D8FE7D /* PPPostListTableViewController.m */,
+			);
+			name = Table;
+			sourceTree = "<group>";
+		};
+		DBB5814B17BD26360095B041 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				DB9C231117DE1391004DF922 /* PPPictureCell.h */,
+				DB9C231217DE1391004DF922 /* PPPictureCell.m */,
+				DBF58F2B17CFE8D50086801C /* PPPictureSetCollectionViewController.h */,
+				DBF58F2C17CFE8D50086801C /* PPPictureSetCollectionViewController.m */,
+				DB8C0E2E17BE6FB50002824D /* PPTakenPictureCell.h */,
+				DB8C0E2F17BE6FB50002824D /* PPTakenPictureCell.m */,
+				DBB5814C17BD265C0095B041 /* PPTakenPictureSetCollectionViewController.h */,
+				DBB5814D17BD265C0095B041 /* PPTakenPictureSetCollectionViewController.m */,
+			);
+			name = Collection;
+			sourceTree = "<group>";
+		};
+		DBBDCE0E17B124AE0047BD51 = {
+			isa = PBXGroup;
+			children = (
+				DBBDCE2017B124AE0047BD51 /* Picture Post */,
+				DBBDCE2117B124AE0047BD51 /* Supporting Files */,
+				DBBDCE4217B124AE0047BD51 /* Picture PostTests */,
+				DBBDCE1917B124AE0047BD51 /* Frameworks */,
+				DBBDCE1817B124AE0047BD51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBBDCE1817B124AE0047BD51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBBDCE1717B124AE0047BD51 /* Picture Post.app */,
+				DBBDCE3B17B124AE0047BD51 /* Picture PostTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBBDCE1917B124AE0047BD51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB6A085D18CA1B0A0020FB95 /* MapKit.framework */,
+				DB6BC36617C3A89900716223 /* Security.framework */,
+				DBBDCE5217B125060047BD51 /* CoreData.framework */,
+				DBBDCE5317B125060047BD51 /* CoreLocation.framework */,
+				DBBDCE5517B125060047BD51 /* QuartzCore.framework */,
+				DBBDCE1A17B124AE0047BD51 /* Foundation.framework */,
+				DBBDCE1C17B124AE0047BD51 /* CoreGraphics.framework */,
+				DBBDCE1E17B124AE0047BD51 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBBDCE2017B124AE0047BD51 /* Picture Post */ = {
+			isa = PBXGroup;
+			children = (
+				DBB5814B17BD26360095B041 /* Collection */,
+				DBBDCE3517B124AE0047BD51 /* Images.xcassets */,
+				DB6BC36217C3A42700716223 /* Keychain */,
+				DBBDCE2F17B124AE0047BD51 /* Main_iPad.storyboard */,
+				DBBDCE2C17B124AE0047BD51 /* Main_iPhone.storyboard */,
+				DBBDCE5B17B1288C0047BD51 /* Managed Objects */,
+				DBBDCE6217B1292C0047BD51 /* Map */,
+				DBBDCE2917B124AE0047BD51 /* PPAppDelegate.h */,
+				DBBDCE2A17B124AE0047BD51 /* PPAppDelegate.m */,
+				DB8CD03217DF77BA00DE1531 /* PPPictureViewController.h */,
+				DB8CD03317DF77BA00DE1531 /* PPPictureViewController.m */,
+				DB6DE8AE17D8D03000F29251 /* PPUploadDelegate.h */,
+				DB6DE8AF17D8D03000F29251 /* PPUploadDelegate.m */,
+				DBBDCE3217B124AE0047BD51 /* PPViewController.h */,
+				DBBDCE3317B124AE0047BD51 /* PPViewController.m */,
+				DBB455E617B3E729006A8ED6 /* Table */,
+				DB7695BF17E897C10096D7AB /* UIColor+PPColors.h */,
+				DB7695C017E897C10096D7AB /* UIColor+PPColors.m */,
+				DB7695BC17E364D40096D7AB /* UIImage+ImageEffects.h */,
+				DB7695BD17E364D40096D7AB /* UIImage+ImageEffects.m */,
+			);
+			path = "Picture Post";
+			sourceTree = "<group>";
+		};
+		DBBDCE2117B124AE0047BD51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBBDCE7517B140D70047BD51 /* initial_post_list.json */,
+				DBBDCE2217B124AE0047BD51 /* Picture Post-Info.plist */,
+				DBBDCE2317B124AE0047BD51 /* InfoPlist.strings */,
+				DBBDCE2617B124AE0047BD51 /* main.m */,
+				DBBDCE2817B124AE0047BD51 /* Picture Post-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = "Picture Post";
+			sourceTree = "<group>";
+		};
+		DBBDCE4217B124AE0047BD51 /* Picture PostTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBBDCE4817B124AE0047BD51 /* Picture_PostTests.m */,
+				DBBDCE4317B124AE0047BD51 /* Supporting Files */,
+			);
+			path = "Picture PostTests";
+			sourceTree = "<group>";
+		};
+		DBBDCE4317B124AE0047BD51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBBDCE4417B124AE0047BD51 /* Picture PostTests-Info.plist */,
+				DBBDCE4517B124AE0047BD51 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBBDCE5B17B1288C0047BD51 /* Managed Objects */ = {
+			isa = PBXGroup;
+			children = (
+				DBBDCE5F17B129040047BD51 /* PicturePostModel.xcdatamodeld */,
+				DBA0212717B924C300CBB77B /* PPTakenPicture.h */,
+				DBA0212817B924C300CBB77B /* PPTakenPicture.m */,
+				DBA0211E17B924C200CBB77B /* PPTakenPictureSet.h */,
+				DBA0211F17B924C200CBB77B /* PPTakenPictureSet.m */,
+				DBA0212117B924C300CBB77B /* PPPicture.h */,
+				DBA0212217B924C300CBB77B /* PPPicture.m */,
+				DBA0212417B924C300CBB77B /* PPPictureSet.h */,
+				DBA0212517B924C300CBB77B /* PPPictureSet.m */,
+				DBBDCE6F17B13A710047BD51 /* PPPost.h */,
+				DBBDCE7017B13A710047BD51 /* PPPost.m */,
+			);
+			name = "Managed Objects";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		DBBDCE6217B1292C0047BD51 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				DBBDCE6317B1295B0047BD51 /* PPMapViewController.h */,
+				DBBDCE6417B1295B0047BD51 /* PPMapViewController.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBBDCE1617B124AE0047BD51 /* Picture Post */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBBDCE4C17B124AE0047BD51 /* Build configuration list for PBXNativeTarget "Picture Post" */;
+			buildPhases = (
+				DBBDCE1317B124AE0047BD51 /* Sources */,
+				DBBDCE1417B124AE0047BD51 /* Frameworks */,
+				DBBDCE1517B124AE0047BD51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Picture Post";
+			productName = "Picture Post";
+			productReference = DBBDCE1717B124AE0047BD51 /* Picture Post.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBBDCE3A17B124AE0047BD51 /* Picture PostTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBBDCE4F17B124AE0047BD51 /* Build configuration list for PBXNativeTarget "Picture PostTests" */;
+			buildPhases = (
+				DBBDCE3717B124AE0047BD51 /* Sources */,
+				DBBDCE3817B124AE0047BD51 /* Frameworks */,
+				DBBDCE3917B124AE0047BD51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBBDCE4117B124AE0047BD51 /* PBXTargetDependency */,
+			);
+			name = "Picture PostTests";
+			productName = "Picture PostTests";
+			productReference = DBBDCE3B17B124AE0047BD51 /* Picture PostTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBBDCE0F17B124AE0047BD51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PP;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Ilya Atkin";
+				TargetAttributes = {
+					DBBDCE1617B124AE0047BD51 = {
+						DevelopmentTeam = GT6A6P5H4Q;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					DBBDCE3A17B124AE0047BD51 = {
+						TestTargetID = DBBDCE1617B124AE0047BD51;
+					};
+				};
+			};
+			buildConfigurationList = DBBDCE1217B124AE0047BD51 /* Build configuration list for PBXProject "Picture Post" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBBDCE0E17B124AE0047BD51;
+			productRefGroup = DBBDCE1817B124AE0047BD51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBBDCE1617B124AE0047BD51 /* Picture Post */,
+				DBBDCE3A17B124AE0047BD51 /* Picture PostTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBBDCE1517B124AE0047BD51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBBDCE3117B124AE0047BD51 /* Main_iPad.storyboard in Resources */,
+				DBBDCE3617B124AE0047BD51 /* Images.xcassets in Resources */,
+				DBBDCE7617B140D70047BD51 /* initial_post_list.json in Resources */,
+				DBBDCE2E17B124AE0047BD51 /* Main_iPhone.storyboard in Resources */,
+				DBBDCE2517B124AE0047BD51 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBBDCE3917B124AE0047BD51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBBDCE4717B124AE0047BD51 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBBDCE1317B124AE0047BD51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA0212617B924C300CBB77B /* PPPictureSet.m in Sources */,
+				DBA0212317B924C300CBB77B /* PPPicture.m in Sources */,
+				DB7695BE17E364D40096D7AB /* UIImage+ImageEffects.m in Sources */,
+				DB7695C117E897C10096D7AB /* UIColor+PPColors.m in Sources */,
+				DB4016CA19A3999F00ED6C24 /* SSKeychainQuery.m in Sources */,
+				DBB455E917B3E771006A8ED6 /* PPPostTableViewController.m in Sources */,
+				DB66F9C217CF9F1B00D8FE7D /* PPPostListTableViewController.m in Sources */,
+				DBA0212917B924C300CBB77B /* PPTakenPicture.m in Sources */,
+				DB9C231317DE1391004DF922 /* PPPictureCell.m in Sources */,
+				DB6DE8B017D8D03000F29251 /* PPUploadDelegate.m in Sources */,
+				DB8C0E3017BE6FB50002824D /* PPTakenPictureCell.m in Sources */,
+				DBBDCE6117B129040047BD51 /* PicturePostModel.xcdatamodeld in Sources */,
+				DBBDCE2B17B124AE0047BD51 /* PPAppDelegate.m in Sources */,
+				DBBDCE3417B124AE0047BD51 /* PPViewController.m in Sources */,
+				DBB5814E17BD265C0095B041 /* PPTakenPictureSetCollectionViewController.m in Sources */,
+				DBA0211D17B914AF00CBB77B /* PPPostInfoCell.m in Sources */,
+				DBBDCE2717B124AE0047BD51 /* main.m in Sources */,
+				DB8CD03417DF77BA00DE1531 /* PPPictureViewController.m in Sources */,
+				DBF58F2D17CFE8D50086801C /* PPPictureSetCollectionViewController.m in Sources */,
+				DBBDCE6517B1295B0047BD51 /* PPMapViewController.m in Sources */,
+				DBA0212017B924C200CBB77B /* PPTakenPictureSet.m in Sources */,
+				DB4016C919A3999F00ED6C24 /* SSKeychain.m in Sources */,
+				DBBDCE7117B13A710047BD51 /* PPPost.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBBDCE3717B124AE0047BD51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBBDCE4917B124AE0047BD51 /* Picture_PostTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBBDCE4117B124AE0047BD51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBBDCE1617B124AE0047BD51 /* Picture Post */;
+			targetProxy = DBBDCE4017B124AE0047BD51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DBBDCE2317B124AE0047BD51 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBBDCE2417B124AE0047BD51 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DBBDCE2C17B124AE0047BD51 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBBDCE2D17B124AE0047BD51 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		DBBDCE2F17B124AE0047BD51 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBBDCE3017B124AE0047BD51 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		DBBDCE4517B124AE0047BD51 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBBDCE4617B124AE0047BD51 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBBDCE4A17B124AE0047BD51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBBDCE4B17B124AE0047BD51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBBDCE4D17B124AE0047BD51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Picture Post/Picture Post-Prefix.pch";
+				INFOPLIST_FILE = "Picture Post/Picture Post-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DBBDCE4E17B124AE0047BD51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Picture Post/Picture Post-Prefix.pch";
+				INFOPLIST_FILE = "Picture Post/Picture Post-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DBBDCE5017B124AE0047BD51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Picture Post.app/Picture Post";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Picture Post/Picture Post-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Picture PostTests/Picture PostTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DBBDCE5117B124AE0047BD51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Picture Post.app/Picture Post";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Picture Post/Picture Post-Prefix.pch";
+				INFOPLIST_FILE = "Picture PostTests/Picture PostTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBBDCE1217B124AE0047BD51 /* Build configuration list for PBXProject "Picture Post" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBBDCE4A17B124AE0047BD51 /* Debug */,
+				DBBDCE4B17B124AE0047BD51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBBDCE4C17B124AE0047BD51 /* Build configuration list for PBXNativeTarget "Picture Post" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBBDCE4D17B124AE0047BD51 /* Debug */,
+				DBBDCE4E17B124AE0047BD51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBBDCE4F17B124AE0047BD51 /* Build configuration list for PBXNativeTarget "Picture PostTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBBDCE5017B124AE0047BD51 /* Debug */,
+				DBBDCE5117B124AE0047BD51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DBBDCE5F17B129040047BD51 /* PicturePostModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DBBDCE6017B129040047BD51 /* PicturePostModel.xcdatamodel */,
+			);
+			currentVersion = DBBDCE6017B129040047BD51 /* PicturePostModel.xcdatamodel */;
+			name = PicturePostModel.xcdatamodeld;
+			path = "Managed Objects/PicturePostModel.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DBBDCE0F17B124AE0047BD51 /* Project object */;
+}
