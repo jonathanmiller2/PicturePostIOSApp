@@ -360,10 +360,10 @@
 			attributes = {
 				CLASSPREFIX = PP;
 				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = "Ilya Atkin";
+				ORGANIZATIONNAME = "University of Oklahoma";
 				TargetAttributes = {
 					DBBDCE1617B124AE0047BD51 = {
-						DevelopmentTeam = GT6A6P5H4Q;
+						DevelopmentTeam = VT8K5GY6FA;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -383,6 +383,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -595,6 +596,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = VT8K5GY6FA;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Picture Post/Picture Post-Prefix.pch";
 				INFOPLIST_FILE = "Picture Post/Picture Post-Info.plist";
@@ -613,6 +615,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = VT8K5GY6FA;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Picture Post/Picture Post-Prefix.pch";
 				INFOPLIST_FILE = "Picture Post/Picture Post-Info.plist";

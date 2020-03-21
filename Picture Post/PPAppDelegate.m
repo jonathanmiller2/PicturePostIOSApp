@@ -105,7 +105,7 @@
         [SSKeychain setPassword:_phoneNumber forService:@"pp" account:@"self"];
     }
     else if (alertView.tag == PP_FIRST_TAG && buttonIndex == 1) {
-        NSURL* instructionsURL = [NSURL URLWithString:@"http://www.unh.edu/nem/mobile/apps/picture-post/instructions.html"];
+        NSURL* instructionsURL = [NSURL URLWithString:@"https://picturepost.ou.edu/taking_photos.jsp"];
         [[UIApplication sharedApplication] openURL:instructionsURL];
     }
 }
@@ -128,14 +128,23 @@
 }
 
 - (void)presentPhoneNumberAlertWithTitle:(NSString*)title andMessage:(NSString*)message {
+    
+    /*
     UIAlertView* phoneNumberAlert = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"Close" otherButtonTitles:@"Log In", @"Register", nil];
     phoneNumberAlert.alertViewStyle = UIAlertViewStyleSecureTextInput;
     phoneNumberAlert.tag = PP_LOGIN_TAG;
     [phoneNumberAlert textFieldAtIndex:0].keyboardAppearance = UIKeyboardAppearanceLight;
     [phoneNumberAlert textFieldAtIndex:0].keyboardType = UIKeyboardTypeNumberPad;
+     */
     
     //WORK AROUND: showing the alert was occassionally crashing because it wasn't being run on the main thread. I believe this is a bug in the SDK
     dispatch_async(dispatch_get_main_queue(), ^{
+        UIAlertView* phoneNumberAlert = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"Close" otherButtonTitles:@"Log In", @"Register", nil];
+        phoneNumberAlert.alertViewStyle = UIAlertViewStyleSecureTextInput;
+        phoneNumberAlert.tag = PP_LOGIN_TAG;
+        [phoneNumberAlert textFieldAtIndex:0].keyboardAppearance = UIKeyboardAppearanceLight;
+        [phoneNumberAlert textFieldAtIndex:0].keyboardType = UIKeyboardTypeNumberPad;
+        
         [phoneNumberAlert show];
     });
 }
